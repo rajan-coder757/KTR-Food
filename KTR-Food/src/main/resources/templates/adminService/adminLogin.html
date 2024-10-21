@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org"
+                 th:fragment="Layout(content)">
+<head>
+	<meta charset="UTF-8" />
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="#" th:href="@{/css/adminServicec/adminHomePage.css}" />
+	<title th:text="${title}"></title>
+</head>
+<body>
+      
+      <div class="navbar">
+              <div class="logoDiv">
+                    <h1>KTR Foods</h1>
+              </div>
+              
+             <!-- 
+              <div class="profileDiv">
+                 <h3>Krishna Kant Sharma <i class="fa-solid fa-angle-down"></i></h3>
+              </div>
+               -->             
+       </div>
+       
+     
+    <section>
+    
+           <div class="container-fluid loginMainConainer">
+                     
+             <div th:if="${param.error}" class="alert alert-danger invalidAlert">Invalid username or password</div>
+             <div th:if="${param.logout}" class="alert alert-success">You have been logged out.</div>
+           
+             <div class="lgpageImgDiv">
+                 <div class="mainImgDiv">
+                     <img src="/image/loginImage-removebg-preview (1).png" alt="" />
+                 </div>
+              </div>
+              
+             <div class="lgImgDivRight">
+                <form action="">
+                <div class="forgetPasswordOuter">
+                
+                   <div class="forgetPasswodDetails">
+                          <h1>Admin's Login</h1>                     
+                          <input type="text" class="form-control" placeholder="Admin id"/>
+                          <input type="text" class="form-control" placeholder="Admin Password"/>
+                          <button class="btn btn-success btn-block mt-5" type="submit">Login Now </button>                      
+                   </div>          
+                
+                </div>
+                </form>
+                
+              </div>
+           </div>
+    </section>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+	<script src="/js/items.js"></script>
+</body>
+</html>

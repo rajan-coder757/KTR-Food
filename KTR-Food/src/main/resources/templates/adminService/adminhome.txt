@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://thymeleaf.org"
+       th:replace="adminService/admindashboard::Layout(~{::section})">
+<head>
+	<meta charset="UTF-8"/>
+	<title th:text="${title}"></title>
+</head>
+<body>
+     <section>
+           <div class="adminHomeMainDiv">
+             <div class="rowFirst row">
+                 <div class="col-sm-4 CategoryContainer">                    
+                          <h1>KTR Foods Pvt. Ltd.</h1>
+                          <h3>When hunger , Then order.</h3>                   
+                 </div>
+                 <div class=" col-sm-7  monthlyOverViewDiv">
+                        <h1>Monthly Overview</h1>
+                        <h4>Total 0% growth this month.</h4>
+                        <div class="recordsDiv">
+                             <div class="recordContentDiv">
+                                   <div class="imgdiv"><i class="fa-regular fa-user"></i></div>
+                                   <div class="detailsDiv">
+                                        <h1>CUSTOMER</h1>
+                                        <h3>0</h3>
+                                   </div>
+                             </div>
+                             <div class="recordContentDiv">
+                                   <div class="imgdiv"><i class="fa-solid fa-dollar-sign"></i></div>
+                                   <div class="detailsDiv">
+                                        <h1> REVENUE</h1>
+                                        <h3>0</h3>
+                                   </div>
+                             </div>
+                             <div class="recordContentDiv">
+                                   <div class="imgdiv"><i class="fa-solid fa-arrow-trend-up"></i></div>
+                                   <div class="detailsDiv">
+                                        <h1>SALES</h1>
+                                        <h3>0</h3>
+                                   </div>
+                             </div>
+                             <div class="recordContentDiv card4" >
+                                   <div class="imgdiv"><i class="fa-solid fa-laptop-file"></i></div>
+                                   <div class="detailsDiv">
+                                        <h1>PRODUCTS</h1>
+                                        <h3>0</h3>
+                                   </div>
+                             </div>
+                        </div>
+                 </div>
+              
+             </div>
+           </div>          
+    </section>	
+</body>
+</html>
+
+
+
+
+
+
+
+
+@charset "UTF-8";
+
+
+.adminHomeMainDiv{
+	width:100%;
+	height:83vh;
+	position:relative;
+	display:flex;
+	justify-content:center;
+}
+
+
+.rowFirst{
+	display:flex;
+	align-items:center;
+	justify-content:space-around;
+	width:100%;
+	height:fit-content;
+	border:1px solid red;
+}
+
+
+.CategoryContainer, .monthlyOverViewDiv{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+	height:12vw;
+	border:1px solid red;
+	box-shadow:inset 1px 1px 10px red;
+	margin:0.2vw;
+	padding:0 0.5vw;
+	text-align:center;
+	gap:1vw;	
+}
+
+.CategoryContainer h1{
+	font-size:2.5vw;
+	color:red;
+	text-shadow:0.1px 0.1px 40px red;
+}
+
+
+.CategoryContainer h3{
+	font-size:1.5vw;
+	color:rgb(23,144,241);
+}
+
+
+.monthlyOverViewDiv{
+	gap:0;
+	align-items:start;
+	justify-content:space-between;
+	padding:0.5vw 1vw;
+}
+
+.monthlyOverViewDiv h1{
+	font-size:2vw;
+	color:red;
+}
+
+.monthlyOverViewDiv h4{
+	font-size:1vw;
+	color:black;
+
+}
+
+.recordsDiv{
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	height:50%;
+	width:100%;
+	gap:0.5vw;
+}
+
+
+.recordContentDiv{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	height:100%;
+	width:25%;
+	border-right:1px solid red;
+	padding:0.5vw;
+}
+.imgdiv{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	height:100%;
+	width:50%;
+}
+
+.detailsDiv{
+	display:flex;
+	align-items:center;
+	flex-direction:column;
+	justify-content:space-evenly;
+}
+
+.card4{
+	border:none;
+}
+.detailsDiv h1{
+	font-size:1vw;
+}
+
+.detailsDiv h3{
+	font-size:1.2vw;
+}

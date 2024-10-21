@@ -1,0 +1,238 @@
+
+
+login page html 
+
+
+
+<!doctype html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org"
+                 th:fragment="Layout(content)">
+<head>
+	<meta charset="UTF-8" />
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="#" th:href="@{/css/adminServicec/adminHomePage.css}" />
+	<title th:text="${title}"></title>
+</head>
+<body>
+      
+      <div class="navbar">
+              <div class="logoDiv">
+                    <h1>KTR Foods</h1>
+              </div>
+              
+             <!-- 
+              <div class="profileDiv">
+                 <h3>Krishna Kant Sharma <i class="fa-solid fa-angle-down"></i></h3>
+              </div>
+               -->             
+       </div>
+       
+     
+    <section>
+    
+           <div class="container-fluid loginMainConainer">
+                     
+             <div th:if="${param.error}" class="alert alert-danger invalidAlert">Invalid username or password</div>
+             <div th:if="${param.logout}" class="alert alert-success">You have been logged out.</div>
+           
+             <div class="lgpageImgDiv">
+                 <div class="mainImgDiv">
+                     <img src="/image/loginImage-removebg-preview (1).png" alt="" />
+                 </div>
+              </div>
+              
+             <div class="lgImgDivRight">
+                <form action="">
+                <div class="forgetPasswordOuter">
+                
+                   <div class="forgetPasswodDetails">
+                          <h1>Admin's Login</h1>                     
+                          <input type="text" class="form-control" placeholder="Admin id"/>
+                          <input type="text" class="form-control" placeholder="Admin Password"/>
+                          <button class="btn btn-success btn-block mt-5" type="submit">Login Now </button>                      
+                   </div>          
+                
+                </div>
+                </form>
+                
+              </div>
+           </div>
+    </section>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+	<script src="/js/items.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+......... admin dashboard html .........................
+<!doctype html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org"
+                 th:fragment="Layout(content)">
+<head>
+	<meta charset="UTF-8" />
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="#" th:href="@{/css/adminServicec/adminDashboard.css}" />
+	<title th:text="${title}"></title>
+</head>
+<body>
+      
+      <div class="navbar">
+              <div class="logoDiv">
+                    <h1>KTR Foods</h1>
+              </div>
+                          
+              <div class="profileDiv">
+                 <h3>Krishna Kant Sharma <i class="fa-solid fa-angle-down"></i></h3>
+              </div>
+                       
+       </div>
+       
+      <div class="adminPageMainDiv">
+         <div class="leftSide">
+            <div class="appIcon">
+                 <img src="/image/ktrOrg-removebg-preview (1).png" alt="" />
+            </div>
+            <div class="allPageDiv">
+                <div class="admiinHomeAllDiv active">
+                  <h1>Admin Dashboard</h1>
+                </div>
+                <div class="admiinHomeAllDiv">
+                <h1>View orders</h1>
+                </div>
+                <div class="admiinHomeAllDiv">
+                <h1>Add new vendor</h1>
+                </div>
+                <div class="admiinHomeAllDiv">
+                <h1>View all customers</h1>
+                </div>
+                <div class="admiinHomeAllDiv">
+                <h1>Add new item</h1>
+                </div>
+                <div class="admiinHomeAllDiv">
+                <h1>Update vendor details</h1>
+                </div>
+                <div class="admiinHomeAllDiv">
+                <h1>Update item details</h1>
+                </div>             
+            </div>
+         </div>
+         <div class="rightSide">
+         <!--       <div th:replace="${content}"></div>  -->
+         </div>
+         
+      </div>
+    
+    
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+	<script src="/js/items.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+............................................................................................
+
+dashboard html
+
+
+<!doctype html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org"
+                 th:fragment="Layout(content1)">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="#" th:href="@{/css/adminServicec/adminDashboard.css}" />
+    <link rel="stylesheet" href="#" th:href="@{/css/adminServicec/adminHome.css}" />
+	<title th:text="${title}"></title>
+</head>
+<body>
+      
+      <div class="navbar">
+              <div class="logoDiv">
+                    <h1>KTR Foods</h1>
+              </div>
+                          
+              <div class="profileDiv">
+                 <h3>Krishna Kant Sharma <i class="fa-solid fa-angle-down"></i></h3>
+              </div>
+                       
+       </div>
+       
+      <div class="adminPageMainDiv">
+         <div class="leftSide">
+            <div class="appIcon">
+                 <img src="/image/ktrOrg-removebg-preview (1).png" alt="" />
+            </div>
+            <div class="allPageDiv">
+                <div class="admiinHomeAllDiv active" >
+                  <h1><a href="" th:href="@{/admin/home}">ADMIN DASHBOARD</a></h1>
+                </div>
+                <div class="admiinHomeAllDiv">
+                <h1><a href="" th:href="@{/admin/allOrders}">VIEW ORDERS</a></h1>
+                </div>
+                <div class="admiinHomeAllDiv">
+                <h1><a href="" th:href="@{/admin/addvendor}">ADD NEW VENDOR</a></h1>
+                </div>
+                <div class="admiinHomeAllDiv">
+                <h1><a href="" th:href="@{/admin/viewCustomer}">VIEW ALL CUSTOMERS</a></h1>
+                </div>
+                <div class="admiinHomeAllDiv">
+                <h1><a href="" th:href="@{/admin/additem}">ADD NEW ITEM</a></h1>
+                </div>
+                <div class="admiinHomeAllDiv">
+                <h1><a href="" th:href="@{/admin/updatevendor}">UPDATE VENDOR'S DETAILS</a></h1>
+                </div>
+                <div class="admiinHomeAllDiv">
+                <h1><a href="" th:href="@{/admin/updateItem}">UPDATE ITEM DETAILS</a></h1>
+                </div>             
+            </div>
+         </div>
+         <div class="rightSide">
+         
+             <div th:replace="${content1}"> 
+                         
+            </div>  
+         </div>         
+      </div>  
+              
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+	<script src="/js/items.js"></script>
+	
+</body>
+</html>

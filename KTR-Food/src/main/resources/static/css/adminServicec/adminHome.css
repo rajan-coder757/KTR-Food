@@ -1,0 +1,182 @@
+@charset "UTF-8";
+
+
+.adminHomeMainDiv{
+	width:100%;
+	height:83vh;
+	position:relative;
+	display:flex;
+	flex-direction:column;
+	justify-content:start;
+}
+
+
+.rowFirst{
+	display:flex;
+	align-items:center;
+	justify-content:space-around;
+	height:fit-content;
+}
+
+
+.CategoryContainer, .monthlyOverViewDiv{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+	height:12vw;
+	border:1px solid rgb(23,144,241);
+	box-shadow:inset 1px 1px 10px rgb(23,144,241);
+	margin:0.2vw;
+	padding:0 0.5vw;
+	text-align:center;
+	gap:1vw;	
+}
+
+.CategoryContainer h1{
+	font-size:2.5vw;
+	color:rgb(23,144,241);
+	text-shadow:0.1px 0.1px 40px rgb(23,144,241);
+}
+
+
+.CategoryContainer h3{
+	font-size:1.5vw;
+	color:black;
+}
+
+
+.monthlyOverViewDiv{
+	gap:0;
+	align-items:start;
+	justify-content:space-between;
+	padding:0.5vw 1vw;
+}
+
+.monthlyOverViewDiv h1{
+	font-size:2vw;
+	color:rgb(23,144,241);
+}
+
+.monthlyOverViewDiv h4{
+	font-size:1vw;
+	color:black;
+
+}
+
+.recordsDiv{
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	height:50%;
+	width:100%;
+	gap:0.5vw;
+}
+
+
+.recordContentDiv{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	height:100%;
+	width:25%;
+	border-right:1px solid red;
+	padding:0.5vw;
+	gap:1vw;
+}
+.imgdiv{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	height:100%;
+	width:50%;
+}
+
+.detailsDiv{
+	display:flex;
+	align-items:center;
+	flex-direction:column;
+	justify-content:space-evenly;
+}
+
+.card4{
+	border:none;
+}
+.detailsDiv h1{
+	font-size:1vw;
+}
+
+.detailsDiv h3{
+	font-size:1.2vw;
+}
+
+.imgdiv{
+	height:3vw;
+	width:3vw;
+	background:rgb(23,144,241);
+}
+
+.imgdiv i{
+	font-size:1vw;
+	color:white;
+}
+.i1{
+	background:#808000;
+	
+}
+.i2{
+	background:green;
+	
+}
+.i3{
+	background:red;
+	
+}
+
+
+
+/* second row start here ...............................*/
+
+.rowsecond{
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+    height:fit-content;
+    padding:1.55vw;
+}
+
+.weekly, .totalearning, .third{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+    height:25vw;
+    width:33%;
+    border:1px solid rgb(23,144,241);
+    box-shadow:inset 1px 1px 10px rgb(23,144,241);
+    gap:0.5vw;
+}
+
+.third{	
+	flex-wrap:wrap;
+	flex-shrink:0;
+    margin:0.1vw;
+    border:none;
+    box-shadow:none;
+}
+
+.innerCard{
+	width:12vw;
+	height:12vw;
+	border:1px solid rgb(23,144,241);
+    box-shadow:inset 1px 1px 10px rgb(23,144,241);
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,255 @@
+@charset "UTF-8";
+
+/*home page csss ..........................................*/
+
+
+@charset "UTF-8";
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,body{
+  padding: 0;
+  margin: 0;
+}
+
+.navbar{
+  background:red;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:0.5vw 2vw;
+}
+
+
+.logoDiv{
+  border: 2px solid white;
+  padding: 0.4vw 1vw;
+  border-radius: 10vw;
+  box-shadow: inset 1px 1px 20px white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoDiv h1{
+   font-size: 1.5vw;
+}
+
+.loginMainConainer{
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	width:100%;
+	height:91vh;
+	border:1px solid red;
+}
+
+
+.lgpageImgDiv{
+	width:50%;
+	height:100%;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	padding:1vw;
+}
+
+.lgpageImgDiv img{
+	width:90%;
+	height:100%;
+	object-fit:cover;
+}
+
+
+.lgImgDivRight{
+	width:50%;
+	height:100%;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	padding:1vw;
+}
+.forgetPasswordOuter{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	border:1px solid red;
+	box-shadow:inset 1px 1px 10px red;
+	width:22vw;
+	height:fit-content;
+	padding:0.5vw;
+	border-radius:10px;
+}
+.forgetPasswodDetails{
+	display:flex;
+	justify-content:space-between;
+	flex-direction:column;
+	align-items:center;
+	border:1px solid red;
+	width:100%;
+	height:100%;
+	padding:0.5vw;
+    border-radius:10px;
+    text-align:center;
+    gap:2vw;
+    background:rgba(255, 0, 0, 0.025);
+    backdrop-filter:blur(15px);
+}
+
+.forgetPasswodDetails h1{
+	font-size:1.5vw;
+	color:red;
+	margin-bottom:1vw;
+}
+
+.forgetPasswodDetails input{
+	height:2.5vw;
+}
+
+.verifyotpdiv{
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	gap:0.8vw;
+}
+
+
+.verifyotpdiv button{
+	width:8vw;
+	height:2.5vw;
+	background:red;
+	border:none;
+}
+.verifyotpdiv button:hover{
+	background:red;
+}
+
+
+
+/* adminDashboard csss ......................................... */
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,body{
+  padding: 0;
+  margin: 0;
+}
+
+.navbar{
+  background:red;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:0.5vw 2vw;
+}
+
+
+.logoDiv{
+  border: 2px solid white;
+  padding: 0.4vw 1vw;
+  border-radius: 10vw;
+  box-shadow: inset 1px 1px 20px white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoDiv h1{
+   font-size: 1.5vw;
+}
+
+.adminPageMainDiv{	
+	display:flex;
+	justify-content:space-between;
+	width:100%;
+	height:fit-content;
+	padding:0.3vw;
+	
+}
+
+
+.leftSide{
+	
+    display:flex;
+	align-items:center;
+	flex-direction:column;
+	justify-content:flex-start;
+	width:18vw;
+	height:90vh;
+	border:1px solid red;
+	box-shadow:inset 1px 1px 10px red;
+}
+
+.appIcon{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	width:100%;
+	height:12vw;
+}
+
+.appIcon img{
+	width:auto;
+	height:100%;
+	object-fit:cover;
+	
+}
+
+
+.allPageDiv{
+	display:flex;
+	align-items:center;
+	flex-direction:column;
+	justify-content:center;
+	width:100%;
+	height:fit-content;
+	gap:1vw;
+	margin-top:1vw;
+	padding:1vw  0;
+}
+
+
+.admiinHomeAllDiv{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	width:80%;
+	height:3vw;
+	border:1px solid red;
+	box-shadow:inset 1px 1px 10px red;
+	font-size:1.5vw;
+	color:red;
+	border-radius:10px;
+}
+
+.admiinHomeAllDiv h1{
+	font-size:1vw;
+}
+
+
+.active{
+	box-shadow:inset 1px 1px 10px rgb(23,144,241);
+	color:rgb(23,144,241);
+	border:1px solid rgb(23,144,241);
+}
+
+.rightSide{
+	width:81vw;
+	height:90vh;
+	border:1px solid red;
+	padding:0.5vw;
+	box-shadow:inset 1px 1px 10px red;
+}
+
+
